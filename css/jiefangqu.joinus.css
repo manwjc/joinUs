@@ -1,0 +1,183 @@
+body, html{ position:relative; width:100%; height:100%; margin:0; padding:0; font-family:"microsoft yahei","黑体"; overflow:hidden; -webkit-tap-highlight-color: rgba(143,142,148,0.08); -webkit-focus-ring-color: rgba(0, 0, 0, 0);/*去掉点击蓝色焦点*/}
+div,ul,li,img{ margin:0; padding:0; list-style:none;}
+img{ width:100%;}
+.bold{ font-weight:bold}
+.grey{ color:#8e8e93;}
+.hide{ display:none;}
+.posrelative{ position:relative;}
+.bgred{ background:#da372a;}
+.bgblue{ background:#5A25E5;}
+.bgpurple{ background:#850097;}
+.bgpink{ background:#A62D8A;}
+.bggreen{ background:#01893D;}
+.bgorange{ background:#C46801;}
+
+.sectionBox { margin: 0 auto; overflow: hidden; }
+.input-normal { position: absolute; outline:none; border:none; border-radius:4px; height:48%; line-height: normal; font-size:18px; font-family:"microsoft yahei"; background:none; color:#232736; padding-left:2%; vertical-align:middle;}
+.input-name{ width: 90%; top: 1%; left: 10px;}
+.input-phone{ width: 60%; top: 50%; left: 10px;}
+.submit-btn{ position: absolute; width:32%; height: 38%; bottom: 5%; right: 2%; opacity: 0;}
+
+.page-elements{ margin: 0 auto; overflow: hidden;}
+
+input::-webkit-input-placeholder { color: #676767 !important; vertical-align:middle;}/* WebKit browsers */
+
+.arrow-icon{ position: fixed; z-index: 999; bottom: 6%; left: 50%;}
+.arrow-up{ position:absolute; width:20px; top:20px; left:50%; margin-left:-10px;}
+
+#audioPlay{ position: absolute; width: 28px; height: 28px; top: 20px; right: 20px; z-index: 9999; background: url(../images/music-note.png) no-repeat; background-size:28px auto ;}
+
+/*诚邀加盟内容*/
+.pagebg{ position: absolute; width: 100%; height: 100%; top: 0; left: 0; z-index: -1;}
+
+.page01_e01{ width: 42%; margin: 10% auto 0;}
+.page01_e02{ width: 84%; margin: 15% auto;}
+.page01_e03{ width: 84%; margin: 0 auto;}
+.page01_e04{ position: absolute; width: 90%; bottom: 5%; left: 5%;}
+
+.page02_e01{ width: 52%; margin: 10% auto 0;}
+
+.page03_e01{ width: 60%; margin: 16% auto 8%;}
+.page03_e02{ width: 100%; margin: 0 auto;}
+.page03_e03{ position: absolute; width: 84%; bottom: 8%; left: 8%;}
+
+.page04_e01{ width: 64%; margin: 14% auto 10%;}
+.page04_e04{ position: absolute; width: 72%; bottom: 5%; left: 14%;}
+
+.page05_e01{ width: 76%; margin: 14% auto 11%;}
+.page05_e02{ width: 76%; margin: 0 auto 12%;}
+.page05_e03{ width: 76%; margin: 0 auto;}
+
+.page07_e01{ width: 80%; margin: 13% auto 3%;}
+.page07_e02{ width: 84%; margin: 1% auto 0;}
+
+.page08_e01{ width: 92%; margin: 18% auto;}
+.page08_e02{ width: 92%; margin: 5% auto 0;}
+
+.page09_e01{ width: 42%; margin: 15% auto 10%;}
+.page09_e02{ width: 80%; margin: 0 auto 14%;}
+.page09_e03{ width: 50%; margin: 0 auto;}
+.page09_e04{ width: 70%; margin: 10% auto 0;}
+.page09_e05{ position: absolute; width: 90%; bottom: 5%; left: 5%;}
+
+ @media only screen and (min-width:640px) {
+.swiper-container { width: 640px !important; }
+}
+ @media only screen and (max-width:639px) {
+.swiper-container { width: 100%; }
+}
+
+/* @media only screen and (max-width:330px) {
+.page01_e01{ width: 42%; margin: 10% auto;}
+.page01_e02{ width: 84%; margin: 0 auto 10%;}
+.page01_e03{ width: 84%; margin: 0 auto;}
+.page01_e04{ position: absolute; width: 90%; bottom: 5%; left: 5%;}
+
+.page03_e01{ width: 60%; margin: 10% auto 8%;}
+.page03_e02{ width: 100%; margin: 0 auto;}
+.page03_e03{ position: absolute; width: 84%; bottom: 5%; left: 8%;}
+
+.page04_e01{ width: 60%; margin: 10% auto;}
+
+.page05_e02{ width: 76%; margin: 0 auto 10%;}
+.page05_e03{ width: 76%; margin: 0 auto;}
+
+.page07_e01{ width: 80%; margin: 8% auto 0;}
+.page07_e02{ width: 84%; margin: 1% auto 0;}
+
+.page08_e01{ width: 84%; margin: 15% auto;}
+.page08_e02{ width: 84%; margin: 6% auto 0;}
+
+.page09_e01{ width: 42%; margin: 12% auto 8%;}
+.page09_e02{ width: 80%; margin: 0 auto 8%;}
+.page09_e03{ width: 50%; margin: 0 auto;}
+.page09_e04{ width: 70%; margin: 5% auto;}
+.page09_e05{ position: absolute; width: 90%; bottom: 5%; left: 5%;} 	
+}*/
+
+.animated1s {
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+.circleTiming{
+    -webkit-animation-duration: 10s;
+            animation-duration: 10s;
+            /*animation-timing-function匀速效果平滑；transition-timing-function匀速效果不平滑*/
+	-webkit-animation-timing-function: linear;
+	        animation-timing-function: linear; 
+}
+
+@-webkit-keyframes bounceInUp01 {
+  0%, 60%, 75%, 90%, 100% {
+    -webkit-transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+            transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  }
+
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, -15px, 0);
+            transform: translate3d(0, -15px, 0);
+  }
+}
+
+@keyframes bounceInUp01 {
+  0%, 60%, 75%, 90%, 100% {
+    -webkit-transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+            transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  }
+
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, -15px, 0);
+            transform: translate3d(0, -15px, 0);
+  }
+}
+
+.bounceInUp01 {
+  -webkit-animation-name: bounceInUp01;
+          animation-name: bounceInUp01;
+}
+
+
+@-webkit-keyframes rotateInCircle {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes rotateInCircle {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+.rotateInCircle {
+  -webkit-animation-name: rotateInCircle;
+          animation-name: rotateInCircle;
+}
